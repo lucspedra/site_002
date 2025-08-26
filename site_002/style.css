@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(210deg, #880888, #ff78e9);
+    display: flex;
+    height: 100vh;
+    width: 100wvh;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    word-break: keep-all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 30%;
+    min-height: 50%;
+    height: max-content;
+    width: max-content;
+    background-color: #f080d1;
+    padding: 20px 0px;
+    border: #ea5ade solid 2px;
+    border-radius: 8%;
+    box-shadow: -2px 0px 14px #e081c2, 2px 0px 12px #510539, 0px 2px 12px #510539, 0px -2px 12px #510539;
+}
+main>h1, main>p{
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+main>h1{
+    font-family: "Bitcount Grid Double", system-ui;
+    margin-bottom: 0.4rem;
+    font-size: 9.6vh;
+    font-weight: 300;
+    filter: drop-shadow(-2px 0px 4.5px #000000)
+}   
+main>p{
+    margin-bottom: 1rem;
+    font-size: 3vh;
+    margin: 0px 20px;
+    filter: drop-shadow(-1px 0px 2px #000000)
+}
+
+#tb_email, #tb_senha, #tb_confirmarSenha{
+    width: 92%;
+    height: 7.5vh;
+    padding-left: 10px;
+    margin-top: 3vh;
+    border: rgb(192, 17, 148) solid 4px;
+    border-radius: 20px;
+    transition: border 0.4s linear, filter 0.4s linear;
+}
+#tb_email:focus, #tb_senha:focus, #tb_confirmarSenha:focus{
+    border: rgb(255, 172, 234) solid 4px;
+    filter: drop-shadow(-1px 0px 4.2px #000000);
+    outline: none;
+}
+
+
+
+
+#btn_continuar{
+    height: max-content;
+    width: 50%;
+    margin-top: 6.2vh;
+    margin-bottom: 0.4rem;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-weight:600;
+    color:azure;
+    border: #6e0d53 3px solid;
+    border-radius: 20px; 
+    background-color: rgb(206, 4, 176);
+    transform: skew(0deg 0deg);
+    transition: all 0.34s linear;    
+}
+#btn_continuar:hover{
+    outline: none;
+    color:rgb(189, 36, 151);
+    background-color: rgb(255, 255, 255);
+    border: rgb(93, 11, 73) solid 2px;
+    transform: skew(14deg, -2deg);
+    filter: drop-shadow(-4px 3px 0px #000000) drop-shadow(-4px 3px 4px #000000);
+}
+
+.avisso{
+    margin-top: 0.15rem;
+    font-size: 2.3vh;
+    filter: drop-shadow(-1px 0px 2px #000000)
+}
+.avisso>a{
+    color:#ff78e9;
+    font-size: 16px;
+    filter:drop-shadow(-2px 0px 5px #000000);
+    text-decoration: none;
+    transition: text-decoration 500ms linear;
+}
+.avisso>a:hover{
+    color:#fab0ee;
+    font-size: 16px;
+    font-weight: 500;
+    filter:drop-shadow(-1px 0px 1px #000000);
+    text-decoration:underline;
+    transition: text-decoration 500ms linear;
+    cursor: pointer;
+}
+
+@keyframes superAnimacaoDeAlteracaoDePaineis{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
